@@ -27,7 +27,7 @@ bool Contact::compare(const Contact &contact) const
 
 bool Contact::operator<(const Contact &contact) const
 {
-    return (this->name < contact.name);
+    return ((this->name < contact.name) == -1)? true : false;
 }
 void Contact::print() const
 {

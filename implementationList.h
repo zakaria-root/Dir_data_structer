@@ -21,7 +21,7 @@ void List::add(const Contact &contact)
     else
     {
         Node *temp = head;
-        while (temp != NULL && (contact.name < temp->contact->name) != -1)
+        while (temp != NULL && (contact.name < temp->contact->name) != true)
             temp = temp->next;
         if (temp != NULL)
         {
