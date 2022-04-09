@@ -5,6 +5,7 @@
         "system_error": "cpp",
         "xlocale": "cpp",
         "memory": "cpp",
-        "xlocnum": "cpp"
+        "xlocnum": "cpp",
+        "iostream": "cpp"
     }
 }
