@@ -17,6 +17,7 @@ private:
     void print() const;
     friend class Node;
     friend class List;
+    friend class Dir;
 };
 
 class Node
