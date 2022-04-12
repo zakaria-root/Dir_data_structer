@@ -34,3 +34,9 @@ Node::~Node()
     previous = nullptr;
 }
 
+void displayContact(Node *node){
+    std::cout << "les information du contact a chercher sont : \n" << std::endl;
+    std::cout << node->toString() << std::endl;
+};
+
+

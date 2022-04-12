@@ -23,7 +23,7 @@ string Contact::toString() const
 
 bool Contact::compare(const Contact &contact) const
 {
-    return (this->email == contact.email); // hamid wald lhram howa li galha lia
+    return (this->email == contact.email) ? true: false;
 }
 
 bool Contact::operator<(const Contact &contact) const

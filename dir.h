@@ -8,7 +8,7 @@ class Contact
 {
 private:
     string name, phone, email;
-    Contact(string, string, string);
+    Contact(string, string, string );
     Contact(const Contact &);
     ~Contact() {};
     string toString() const;
@@ -30,6 +30,7 @@ private:
     ~Node();
     string toString() const;
     friend class List;
+    friend void displayContact(Node*);
 };
 
 class List
