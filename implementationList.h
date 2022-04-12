@@ -63,7 +63,6 @@ void List::remove(string name, string email = "")
     Contact contact(name, email, "");
     if (head->contact->compare(contact) == 1)
     {
-        std::cout << "cc" << std::endl;
         Node *temp = head;
         head = head->next;
         free(temp);
@@ -100,13 +99,11 @@ Node *List::search(string name, string email = "") const
     return temp;
 }
 
-void List::update(string searchEmail, string name, string email, string phone = "") const
+void List::update(string searchEmail, string name, string email, string phone = "") 
 {
-    Contact *contact = new Contact(name, email, phone);
-    Node *temp = head;
-    Node *node = search(name, searchEmail);
-
-    node->contact = contact;
+    remove(name, searchEmail);
+    Contact contact(name, email, phone);
+    add(contact);
 }
 
 string List::toString() const

@@ -45,7 +45,7 @@ public:
     void add(const Contact &);
     void remove(string, string);
     Node *search(string, string) const;
-    void update(string, string ,string, string) const;
+    void update(string, string ,string, string);
     string toString() const;
     void print() const;
     bool isEmpty() const;

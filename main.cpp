@@ -17,7 +17,7 @@ main()
 
     // --------------------- AJOUTER CONTACTS -----------------------
 
-    dir.remove("zika", "ziko@gmail.com");
+    // dir.remove("zika", "ziko@gmail.com");
 
     // --------------------- SUPPRIMER CONTACT -----------------------
 
@@ -26,11 +26,13 @@ main()
 
     // --------------------- CHERCHER CONTACT -----------------------
 
+    // dir.update("zaid@gmail.com", "zak", "zak@gmail.com", "0665846999");
+
+    // --------------------- UPDATE CONTACTS -----------------------
+
     dir.print();
 
     // --------------------- AFFICHER CONTACTS -----------------------
-
-    // dir.update("zika", "ziko@gmail.com", "0665846999");
 
     std::cout << "the main file" << std::endl;
 }

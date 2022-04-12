@@ -27,9 +27,6 @@ void Dir::remove(string name, string email = "")
     {
         std::cout << "la list est vide ..." << std::endl;
     }
-
-    // for (int index = position; index < NBLISTS - 1; index++)
-    //     lists[index] = lists[index + 1];
 }
 Node *Dir::search(string name, string email = "") const
 {
@@ -42,12 +39,16 @@ void Dir::update(string searchEmail, string name, string email, string phone = "
 {
     char c = searchEmail[0];
     int position = toupper(c) - 65;
-    // if (email != searchEmail)
-    // {
+    if (email[0] != searchEmail[0])
+    {
+        remove(name, searchEmail);
+        add(name, email, phone);
+    }else
+    {
+        lists[position].update(searchEmail, name, email, phone);
+    }
+    
 
-    // }
-
-    lists[position].update(searchEmail, name, email, phone);
 }
 string Dir::toString() const
 {
