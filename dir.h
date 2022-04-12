@@ -8,7 +8,7 @@ class Contact
 {
 private:
     string name, phone, email;
-    Contact(string, string, string = "");
+    Contact(string, string, string);
     Contact(const Contact &);
     ~Contact() {};
     string toString() const;
@@ -25,7 +25,7 @@ class Node
 private:
     Contact *contact;
     Node *previous, *next;
-    Node(string, string, string = "");
+    Node(string, string, string);
     Node(const Contact &);
     ~Node();
     string toString() const;
@@ -42,9 +42,9 @@ public:
     List();
     ~List();
     void add(const Contact &);
-    void remove(string, string = "");
-    Node *search(string, string = "") const;
-    void update(string, string ,string, string = "") const;
+    void remove(string, string);
+    Node *search(string, string) const;
+    void update(string, string ,string, string) const;
     string toString() const;
     void print() const;
     bool isEmpty() const;
@@ -58,10 +58,10 @@ private:
 public:
     Dir();
     ~Dir();
-    void add(string, string, string = "");
-    void remove(string, string = "");
-    Node *search(string, string = "") const;
-    void update(string, string, string, string = "");
+    void add(string, string, string );
+    void remove(string, string );
+    Node *search(string, string ) const;
+    void update(string, string, string, string );
     string toString() const;
     void print() const;
     bool isEmpty() const;

@@ -17,7 +17,14 @@ Node::Node(const Contact &contact)
 
 string Node::toString() const
 {
-    return toString();
+    if (contact != NULL)
+    {
+    return  contact->toString();
+    }else
+    {
+        return "";
+    }
+
 }
 
 Node::~Node()

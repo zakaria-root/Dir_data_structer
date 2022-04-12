@@ -34,7 +34,16 @@ void Dir::update(string searchEmail, string name, string email, string phone = "
 }
 string Dir::toString() const
 {
-    return this->toString();
+    string str ="";
+    for (int index = 0; index < NBLISTS ; index++)
+    {
+        // std::cout << "index " << index << lists[index].toString()<< std::endl;
+        
+        str += "Dir[ "+ to_string(index) +" ] : \n" + lists[index].toString();
+        // str+= "\n";
+    }
+    
+    return str;
 }
 void Dir::print() const
 {
@@ -43,4 +52,9 @@ void Dir::print() const
 bool Dir::isEmpty() const
 {
     return size == 0;
+}
+
+Dir::~Dir()
+{
+    size = 0;
 }

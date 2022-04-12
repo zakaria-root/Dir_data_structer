@@ -17,7 +17,8 @@ Contact::Contact(const Contact &contact)
 
 string Contact::toString() const
 {
-    return "name = " + this->name + ", email = " + this->email + ", phone  = " + this->phone;
+    
+    return " \n name = " + this->name + " \n email = " + this->email + "\n phone  = " + this->phone + "\n------------------------------\n";
 };
 
 bool Contact::compare(const Contact &contact) const

@@ -13,7 +13,8 @@ void List::add(const Contact &contact)
 {
 
     Node *node = new Node(contact);
-    if (head != NULL)
+    
+    if (head == nullptr)
     {
         head = node;
         size++;
@@ -21,9 +22,9 @@ void List::add(const Contact &contact)
     else
     {
         Node *temp = head;
-        while (temp != NULL && (contact.name < temp->contact->name) != true)
+        while (temp->next != NULL && (contact.email < temp->contact->email) != -1)
             temp = temp->next;
-        if (temp != NULL)
+        if (temp->next != NULL)
         {
             node->next = temp;
             if (temp->previous != NULL)
@@ -76,16 +77,19 @@ string List::toString() const
 {
     string str = "";
     Node *temp = head;
+    int count  = 1;
     while (temp != NULL)
     {
-        str += temp->toString();
+        std::cout << "bb" << std::endl;
+        str = str + "contact[ "+ to_string(count) + " ] : "+temp->toString();
         temp = temp->next;
+        count++;
     }
     return str;
 }
 void List::print() const
 {
-    std::cout << this->toString();
+    std::cout << toString();
 }
 bool List::isEmpty() const
 {
