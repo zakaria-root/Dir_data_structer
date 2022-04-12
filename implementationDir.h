@@ -55,7 +55,7 @@ string Dir::toString() const
     string str = "";
     for (int index = 0; index < NBLISTS; index++)
     {
-        str += "Dir[ " + to_string(index) + " ] : \n" + lists[index].toString();
+        str += "Dir[ " + to_string(index+1) + " ] : \n" + lists[index].toString();
     }
 
     return str;
