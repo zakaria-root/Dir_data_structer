@@ -4,9 +4,9 @@
 #include "implementationList.h"
 #include "implementationNode.h"
 #include "dir.h"
+
 int main()
 {
-    
     Dir dir;
 
     int NBC;
