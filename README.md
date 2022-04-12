@@ -3,7 +3,6 @@
 
 ## Fonctionalite
 
-
 - [x] consiltation 
 - [x] recherche 
 - [x] l'ajoute d'un nouvel contact
@@ -11,14 +10,15 @@
 - [x] la modification
 - [x] la fermeture du programme
 
+## L'execution de programme
 
  <h1 align="center">
   <br>
-<img src='images/interface.png' width='900'/> 
+<img src='images/interface.png' width='800'/> 
   <br/>
 </h1>
 <h1 align="center">
   <br>
-<img src='images/listContact.png' width='900'/> 
+<img src='images/listContact.png' width='800'/> 
   <br/>
 </h1>
